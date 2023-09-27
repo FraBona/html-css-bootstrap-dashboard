@@ -5,15 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>DashBoard</title>
 </head>
-<body class="debug">
+<body class="debugg">
   <div class="app">
-    <div class="row-app d-flex flex-column">
-      <header class="page-header"></header>
-      <div class="cont-main d-flex ">
+    <div class="h-100 d-flex flex-column">
+      <header class="page-header">
+        <div class="d-flex justify-content-center align-items-center gap-3">
+          <div>
+            <div class="logo-desktop">
+              <img src="./img/logo.svg" alt="">
+            </div>
+
+            <div class="logo-mobile">
+              <img src="./img/mobile-logo.png" alt="">
+            </div>
+          </div>
+
+          <div class="flex-grow search">
+            <div class="prova">
+              <p><i class="fa-solid fa-magnifying-glass icon-search"></i> Prova a cercare: Lezioni di Laravel</p>
+            </div>
+          </div>
+
+          <div>
+            <ul class="menu d-flex gap-3">
+              <li class="menu__item"><i class="fa-solid fa-ellipsis-vertical"></i><i class="fa-solid fa-bars"></i></li>
+              <li class="menu__item"><i class="fa-solid fa-question mark-question"></i></li>
+              <li class="menu__item"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+              <li class="menu__item"><i class="fa-solid fa-bell icon-bell"></i></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="cont-main flex-grow d-flex ">
         <nav class="sidebar "></nav>
-        <main class="page-main"></main>
+        <main class="page-main flex-grow"></main>
       </div>
     </div>
   </div>

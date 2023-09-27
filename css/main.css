@@ -1,32 +1,111 @@
+:root{
+  --dark: rgb(4, 30, 52);
+  --grey-light: rgb(229,229,229);
+  --dark-grey: rgb(91, 88, 88);
+  --orange: rgb(255, 143, 0);
+}
+
+ul,ol,li{
+  all: unset;
+}
+
+img{
+  width: 100%;
+}
+
 .app{
   position: relative;
+  height: 100vh;
 }
 
-.row-app{
+.h-100{
   height: 100%;
-}
-
-.cont-main{
-  flex-grow: 1;
 }
 
 .page-header{
   position: sticky;
+  padding: 5px;
 }
 
 .sidebar{
   width: 50px;
+  background-color: var(--dark);
+  height: 100%;
 }
 
-.page-main{
+/*UTILITIES*/
+.flex-grow{
   flex-grow: 1;
 }
 
+/*HEADER*/
+
+.logo-desktop > img{
+  width: 220px;
+}
+
+.logo-mobile > img{
+  width: 50px;
+}
+
+.search{
+  height: 33px;
+  background-color: var(--grey-light);
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.menu__item{
+  font-size: 22px;
+}
+
+.mark-question{
+  color: white;
+  border: 1px solid;
+  background-color: var(--dark-grey);
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-size: 18px;
+}
+
+.icon-bell{
+  color: var(--orange);
+}
+
+.prova > p{
+  font-size: 20px;
+  line-height: 1.3em;
+  color: grey;
+}
+
+.icon-search{
+  padding: 3px 10px;
+  color: black;
+}
+
+.prova{
+  height: 100%;
+}
+
 /*MEDIA QUERY*/
-@media (min-width: 576px) {  }
+@media (min-width: 576px) { 
+
+ }
+
+@media (max-width: 768px){
+  .logo-desktop{
+    display: none;
+  }
+}
 
 @media (min-width: 768px) { 
-    
+    .logo-mobile{
+      display: none;
+    }
+
+    .sidebar{
+      width: 230px;
+    }
  }
 
 @media (min-width: 992px) { }

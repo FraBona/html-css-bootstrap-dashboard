@@ -135,10 +135,10 @@ img{
   font-size: 25px;
 }
 
-.offcanvas.offcanvas-start{
-  top: 0 !important;
-  right: 0 !important;
+.offcanvas{
+  --bs-offcanvas-width: 100%;
 }
+
 
 
 /*MEDIA QUERY*/
@@ -197,7 +197,7 @@ img{
     }
 
     .offcanvas{
-      --bs-offcanvas-width: 1200px;
+      --bs-offcanvas-width: 900px;
     }
 
  }

@@ -133,6 +133,10 @@ img{
     justify-content: center;
   }
 
+  .sidebar__hover:hover{
+    width: 25px;
+  }
+
 }
 
 @media (min-width: 768px) { 
@@ -156,6 +160,14 @@ img{
 @media (min-width: 1200px) { }
 
 @media (min-width: 1400px) { }
+
+/*HOVER*/
+.sidebar__hover:hover{
+  background-color: var(--dark-grey);
+  height: 30px;
+  opacity: 0.7;
+}
+
 
 /*DEBUG*/
 .debug{

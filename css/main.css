@@ -28,7 +28,7 @@ img{
 }
 
 .sidebar{
-  width: 50px;
+  width: 100px;
   background-image: url('../img/sidebar-bg.png');
   background-color: var(--dark);
   height: 100%;
@@ -94,6 +94,7 @@ img{
 .sidebar__icon{
   color: white;
   font-size: 20px;
+  padding: 0 10px;
 }
 
 .cont-icon{
@@ -106,7 +107,8 @@ img{
   .search > p {
     font-size: 20px;
   }
- }
+
+}
 
 @media (max-width: 768px){
   .logo-desktop{
@@ -125,6 +127,12 @@ img{
   .cont-sidebar-span{
     display: none;
   }
+
+  .sidebar__icon{
+    width: 100px;
+    justify-content: center;
+  }
+
 }
 
 @media (min-width: 768px) { 
@@ -132,14 +140,15 @@ img{
       display: none;
     }
 
-    .sidebar{
-      width: 230px;
-    }
-
     .sidebar__cont{
       all: unset;
       width: 100%;
     }
+
+    .sidebar{
+      width: 230px;
+    }
+
  }
 
 @media (min-width: 992px) { }

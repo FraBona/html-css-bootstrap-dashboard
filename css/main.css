@@ -72,8 +72,8 @@ img{
   color: var(--orange);
 }
 
-.prova > p{
-  font-size: 20px;
+.search > p{
+  font-size: 12px;
   line-height: 1.3em;
   color: grey;
 }
@@ -83,17 +83,25 @@ img{
   color: black;
 }
 
-.prova{
-  height: 100%;
-}
 
 /*MEDIA QUERY*/
 @media (min-width: 576px) { 
-
+  .search > p {
+    font-size: 20px;
+  }
  }
 
 @media (max-width: 768px){
   .logo-desktop{
+    display: none;
+  }
+  .menu__item:nth-child(1){
+    display: none;
+  }
+  .menu__item:nth-child(2){
+    display: none;
+  }
+  .menu__item:nth-child(3){
     display: none;
   }
 }

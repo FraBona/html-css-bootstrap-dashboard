@@ -23,8 +23,10 @@
             </div>
           </div>
 
-          <div class="flex-grow search">
-            <p><i class="fa-solid fa-magnifying-glass icon-search"></i> Prova a cercare: Lezioni di Laravel</p>
+          <div class="flex-grow search d-flex align-items-center">
+            <div class="cont-search">
+              <p><i class="fa-solid fa-magnifying-glass icon-search"></i> Prova a cercare: Lezioni di Laravel</p>
+            </div>
           </div>
 
           <div>
@@ -76,14 +78,119 @@
             </div>
 
             <div class="sidebar__icon d-flex pb-5">
-              <div class="cont-icon"><i class="fa-solid fa-gear"></i></div>
-              <div class="cont-sidebar-span"><span>Admin</span></div>
+              <div class="d-flex sidebar__hover">
+                <div class="cont-icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="cont-sidebar-span"><span>Admin</span></div>
+              </div>
             </div>
 
           </div>
         </nav>
 
-        <main class="page-main flex-grow"></main>
+        <main class="page-main flex-grow">
+          <div class="container-fluid bg-blue">
+            <div class="row p-4 prova">
+
+              <div class="col-lg-6 col-md-4 col-sm-12">
+                <div class="d-flex align-items-center flex-wrap gap-3">
+                  <h1>Boolean</h1>
+                  <span class="badge">Piano Blaze</span>
+                </div>
+                <div class="d-flex align-items-center flex-wrap gap-3 py-2">
+                  <span class="badge">3app</span>
+                  <span>>></span>
+                  <span class="badge">+</span>
+                  <span class="badge">Boolean mobile app</span>
+                  <span class="badge">Boolean web app</span>
+                  <span class="badge">Boolean blog app</span>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="d-flex align-items-center cont-header-main">
+                  <p>Studenti online negli utlimi 30 minuti</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <h1>125</h1>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="cont-header-main">
+                    <p>Nuovo Studente</p>
+                  </div>
+                  <div>
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-plus icon-plus"></i></a>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                      </div>
+                      <div class="offcanvas-body">
+                        <form class="row g-3">
+                          <div class="col-md-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                          </div>
+                          <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                          </div>
+                          <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                              <option selected>Choose...</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                          <div class="col-md-2">
+                            <label for="cap" class="form-label">Cap</label>
+                            <input type="number" class="form-control" id="cap">
+                          </div>
+                          <div class="col-12">
+                            <label for="inputAddress" class="form-label">Photo</label>
+                            <input type="file" class="form-control" id="file" placeholder="1234 Main St">
+                          </div>
+                          <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Check me out
+                              </label>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button type="submit" class="btn btn-warning">Svuota</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   </div>

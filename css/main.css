@@ -3,9 +3,11 @@
   --grey-light: rgb(229,229,229);
   --dark-grey: rgb(91, 88, 88);
   --orange: rgb(255, 143, 0);
+  --blue: rgb(27, 114, 232);
+  --dark-blue: rgb(22, 91, 186);
 }
 
-ul,ol,li{
+ul,ol,li,a{
   all: unset;
 }
 
@@ -35,9 +37,14 @@ img{
   flex-shrink: 0;
 }
 
+
 /*UTILITIES*/
 .flex-grow{
   flex-grow: 1;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 /*HEADER*/
@@ -47,11 +54,11 @@ img{
 }
 
 .logo-mobile > img{
-  width: 50px;
+  width: 70px;
 }
 
 .search{
-  height: 33px;
+  height: 53px;
   background-color: var(--grey-light);
   border-radius: 5px;
   flex-grow: 1;
@@ -74,7 +81,7 @@ img{
   color: var(--orange);
 }
 
-.search > p{
+.cont-search > p{
   font-size: 12px;
   line-height: 1.3em;
   color: grey;
@@ -84,6 +91,7 @@ img{
   padding: 3px 10px;
   color: black;
 }
+
 
 /*SIDEBAR*/
 .sidebar__cont{
@@ -101,13 +109,43 @@ img{
   width: 50px;
 }
 
+/*MAIN CONTENT*/
+.bg-blue{
+  background-color: var(--blue);
+  color: white;
+  overflow: hidden;
+}
+
+.badge{
+  font-size: 20px;
+  border: 1px solid transparent;
+  background-color: var(--dark-blue);
+  border-radius: 999px;
+  padding: 8px 15px;
+}
+
+.icon-plus{
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.cont-header-main > p{
+  font-size: 25px;
+}
+
+.offcanvas.offcanvas-start{
+  top: 0 !important;
+  right: 0 !important;
+}
+
 
 /*MEDIA QUERY*/
 @media (min-width: 576px) { 
-  .search > p {
+  .cont-search > p {
     font-size: 20px;
   }
-
 }
 
 @media (max-width: 768px){
@@ -137,6 +175,11 @@ img{
     width: 25px;
   }
 
+  .prova{
+    flex-direction: column-reverse;
+    gap: 50px
+  }
+
 }
 
 @media (min-width: 768px) { 
@@ -153,11 +196,35 @@ img{
       width: 230px;
     }
 
+    .offcanvas{
+      --bs-offcanvas-width: 1200px;
+    }
+
  }
 
 @media (min-width: 992px) { }
 
-@media (min-width: 1200px) { }
+@media (min-width: 1200px) { 
+  .badge:nth-child(3){
+    display: none;
+  }
+}
+
+@media (max-width: 1200px){
+  .badge:nth-child(4){
+    display: none;
+  }
+  .badge:nth-child(5){
+    display: none;
+  }
+  .badge:nth-child(6){
+    display: none;
+  }
+
+  .cont-header-main > p{
+    font-size: 18px;
+  }
+}
 
 @media (min-width: 1400px) { }
 

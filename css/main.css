@@ -29,8 +29,10 @@ img{
 
 .sidebar{
   width: 50px;
+  background-image: url('../img/sidebar-bg.png');
   background-color: var(--dark);
   height: 100%;
+  flex-shrink: 0;
 }
 
 /*UTILITIES*/

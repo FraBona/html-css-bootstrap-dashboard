@@ -85,6 +85,21 @@ img{
   color: black;
 }
 
+/*SIDEBAR*/
+.sidebar__cont{
+  width: 100%;
+  padding: 5px;
+}
+
+.sidebar__icon{
+  color: white;
+  font-size: 20px;
+}
+
+.cont-icon{
+  width: 50px;
+}
+
 
 /*MEDIA QUERY*/
 @media (min-width: 576px) { 
@@ -106,6 +121,10 @@ img{
   .menu__item:nth-child(3){
     display: none;
   }
+
+  .cont-sidebar-span{
+    display: none;
+  }
 }
 
 @media (min-width: 768px) { 
@@ -115,6 +134,11 @@ img{
 
     .sidebar{
       width: 230px;
+    }
+
+    .sidebar__cont{
+      all: unset;
+      width: 100%;
     }
  }
 
